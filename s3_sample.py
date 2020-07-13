@@ -48,13 +48,13 @@ s3client = boto3.client('s3')
 # For more information about bucket name restrictions, see:
 # http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html
 """ 
-this is custom myname i given to name the bucket  """
+This is custom myname I have given to name the bucket  """
 bucket_name = "python-sdk-sample-%s" % 'renukaprasad1'  
 
 print('Creating new bucket with name: {}'.format(bucket_name))
 location = {'LocationConstraint': 'us-west-2'}
 """ 
-use the boto https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+Use the boto https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
 
 for more documentation """
 s3client.create_bucket(Bucket=bucket_name,CreateBucketConfiguration=location) 
